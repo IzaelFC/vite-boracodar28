@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    width: 32px;
+    height: 32px;
+}
+
+#container {
+    background: rgba(2, 6, 23, 0.80);
+}
+
+@media (max-width: 640px){
+    img {
+        width: 28px;
+        height: 28px;
+    }
+}
