@@ -7,7 +7,8 @@ import paperPlane from '../assets/paper-plane-right.svg'
 import playCircle from '../assets/play-circle.svg'
 import plusCircle from '../assets/plus-circle.svg'
 
-const icons = {
+
+const icons: Icons = {
     "arrowRight" : arrowRight,
     "code" : code,
     "imageSquare" : imageSquare,
@@ -18,7 +19,12 @@ const icons = {
     "plusCircle" : plusCircle
 }
 
-export function Botao(props){
+interface Icons {
+    [key: string]: string;
+}
+
+
+export function Botao(props: { icon:string, text:string }){
     return (
         <section className='flex p-3 justify-between bg-[#0F172A] rounded-2xl border border-[#334155]'>
             <div className='flex gap-3 my-auto'>
